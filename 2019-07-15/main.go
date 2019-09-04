@@ -45,8 +45,6 @@ func tax(income int) int {
 	} else if income > 30000 {
 		taxableUpperBand := income - 30000
 		tax := float64(taxableUpperBand) * taxRateBand2
-		fmt.Println(tax)
-		fmt.Println(taxableUpperBand)
 		return int(tax + maxTaxBand1)
 	} else if income > 10000 {
 		taxableUpperBand := income - 10000
